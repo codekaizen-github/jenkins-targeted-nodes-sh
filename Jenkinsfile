@@ -1,9 +1,5 @@
 pipeline {
     agent none
-    parameters {
-        string(name: 'NODE_LABEL', defaultValue: 'linux', description: 'Node label to run the script on')
-        string(name: 'SCRIPT', defaultValue: 'echo "Hello World"', description: 'Script to execute')
-    }
     stages {
         stage('Execute') {
             steps {
